@@ -44,7 +44,7 @@ describeFunction(null);
 This example below checks if the function is an AsyncGeneratorFunciton Object
 ```javascript
 
-funciton isAsyncGenerator(fn) {
+function isAsyncGenerator(fn) {
   let info = describeFunction(fn);
   return info.isAsync && info.isGenerator;
 }

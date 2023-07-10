@@ -44,7 +44,7 @@ function describeFunction(f) {
     flags.type = "arrow";
   } else if (/^get|set/.test(p)) {
     p = p.slice(p.indexOf("(") + 1, p.indexOf(")"));
-    flags.type = (p.match(/^get|set/)[0]) + "ter";
+    flags.type = (fstr.match(/^get|set/)[0]) + "ter";
     flags.name = flags.name.replace(/^get|set/, "").trim();
   }
 
